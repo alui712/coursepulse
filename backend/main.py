@@ -49,7 +49,7 @@ app.add_exception_handler(RateLimitExceeded, _coursepulse_rate_limit_handler)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

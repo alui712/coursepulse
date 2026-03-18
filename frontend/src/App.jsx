@@ -421,7 +421,7 @@ function App() {
     } catch (err) {
       let message = 'Something went wrong. Please try again.'
       if (err.code === 'ERR_NETWORK') {
-        message = 'Unable to connect. Make sure the backend is running at http://localhost:8000'
+        message = 'Unable to connect to the cloud backend.'
       } else if (err.response?.status === 429) {
         message =
           'Daily API limit reached to protect free-tier quotas. Please click "Load Demo Data" to explore the dashboard!'
