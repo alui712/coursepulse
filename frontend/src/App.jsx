@@ -27,7 +27,7 @@ import {
 } from 'recharts'
 
 const localizer = momentLocalizer(moment)
-const API_URL = 'http://localhost:8000'
+const API_URL = 'https://coursepulse-5i2t.onrender.com/upload-syllabi/'
 
 function isoDateDaysFromToday(daysFromToday) {
   const d = new Date()
